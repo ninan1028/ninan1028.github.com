@@ -21,7 +21,7 @@
 2.作为项目的开发依赖安装 在对应项目中安装$ npm install --save-dev gulp
 3 项目初始化 npm init 来 创建 package.json文件$ npm init 
   通">
-<meta property="og:updated_time" content="2015-11-10T10:55:52.978Z">
+<meta property="og:updated_time" content="2015-11-15T17:39:45.682Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="gulp">
 <meta name="twitter:description" content="gulp知识点什么是gulpGulp是一个构建系统,执行开发中的常见任务.Gulp是基于Node.js来构建的.
@@ -110,12 +110,19 @@
 <li>!js/app.js 从匹配结果中排除js/app.js,这种方法在你想要匹配特殊文件之外的所有文件非常管用</li>
 <li>*.+(js|css) 匹配根目录下所有后缀为.js或者.css的文件</li>
 </ul>
-<h4 id="gulp_的API">gulp 的API</h4><h5 id="gulp-task()_gulp-src()_gulp-dest()_gulp-watch()">gulp.task()  gulp.src()  gulp.dest() gulp.watch()</h5><p> <strong>1 gulp.src()</strong><br> gulp.src() 方法是用来获取流的</p>
-
+<h4 id="gulp_的API">gulp 的API</h4><h5 id="gulp-task()_gulp-src()_gulp-dest()_gulp-watch()">gulp.task()  gulp.src()  gulp.dest() gulp.watch()</h5><p>gulp.task(name, fn)这个你应经见过了</p>
+<p>gulp.run(tasks…)尽可能多的并行运行多个task</p>
+<p>gulp.watch(glob, fn)当glob内容发生改变时，执行fn</p>
+<p>gulp.src(glob)返回一个可读的stream</p>
+<p>gulp.dest(glob)返回一个可写的stream</p>
+<h4 id="gulp中的顺序执行方案">gulp中的顺序执行方案</h4><p>在gulp对任务的定义中,可以声明任务之间的依赖. 比如<br>    gulp.task(“sass”,[“clean”],funtion(){<br>    //do something<br>    })<br>    gulp.task(“clean”,function(){<br>         return  gulp.src(‘sample.css’)<br>                  .pipe(clean())<br>    })<br> 在声明依赖后,可以保证任务的顺序执行. 但是要记得 return 返回流</p>
+<h4 id="gulp_plugins">gulp  plugins</h4><p>gulp-autoprefixer<br>根据设置浏览器版本自动处理浏览器前缀.不必考虑各浏览器兼容前缀</p>
+<h3 id="使用gulp_来搭建项目_记录">使用gulp 来搭建项目 记录</h3><h4 id="browser-sync">browser-sync</h4><h5 id="安装">安装</h5><pre><code>npm install --<span class="built_in">save</span>-<span class="built_in">dev</span> browser-sync
+</code></pre>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/11/10/gulp/" data-id="cigutkh9h0000d4dh9ker1j9b" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/11/10/gulp/" data-id="cih3hbeb90000t8dhc4nu0mfp" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/gulp/">gulp</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/构建工具/">构建工具</a></li></ul>
@@ -163,7 +170,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/bower/">bower</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/grunt/">grunt</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gulp/">gulp</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/markdown/">markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/react/">react</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/yemon/">yemon</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/构建工具/">构建工具</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/bower/">bower</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/">github</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/grunt/">grunt</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gulp/">gulp</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/markdown/">markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/react/">react</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/yemon/">yemon</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/构建工具/">构建工具</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -172,7 +179,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/bower/" style="font-size: 10px;">bower</a> <a href="/tags/grunt/" style="font-size: 10px;">grunt</a> <a href="/tags/gulp/" style="font-size: 10px;">gulp</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/react/" style="font-size: 10px;">react</a> <a href="/tags/yemon/" style="font-size: 10px;">yemon</a> <a href="/tags/构建工具/" style="font-size: 10px;">构建工具</a>
+      <a href="/tags/bower/" style="font-size: 20px;">bower</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/grunt/" style="font-size: 10px;">grunt</a> <a href="/tags/gulp/" style="font-size: 20px;">gulp</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/react/" style="font-size: 10px;">react</a> <a href="/tags/yemon/" style="font-size: 10px;">yemon</a> <a href="/tags/构建工具/" style="font-size: 10px;">构建工具</a>
     </div>
   </div>
 
@@ -181,7 +188,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">5</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">7</span></li></ul>
     </div>
   </div>
 
@@ -193,6 +200,14 @@
       <ul>
         
           <li>
+            <a href="/2015/11/16/jsh-web/">jsh_web</a>
+          </li>
+        
+          <li>
+            <a href="/2015/11/11/hexo入门/">hexo入门</a>
+          </li>
+        
+          <li>
             <a href="/2015/11/11/react/">react</a>
           </li>
         
@@ -202,14 +217,6 @@
         
           <li>
             <a href="/2015/11/04/构建工具简介/">构建工具简介</a>
-          </li>
-        
-          <li>
-            <a href="/2015/11/04/markdown/">markdown学习记录</a>
-          </li>
-        
-          <li>
-            <a href="/2015/11/04/hello-world/">Hello World</a>
           </li>
         
       </ul>
