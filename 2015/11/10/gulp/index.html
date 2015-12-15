@@ -1,11 +1,57 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html class="theme-next   use-motion ">
 <head>
-  <meta charset="utf-8">
-  
-  <title>gulp | blog</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="gulp知识点什么是gulpGulp是一个构建系统,执行开发中的常见任务.Gulp是基于Node.js来构建的.
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="gulp,构建工具," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
+
+
+
+
+
+
+<meta name="description" content="gulp知识点什么是gulpGulp是一个构建系统,执行开发中的常见任务.Gulp是基于Node.js来构建的.
 
 1.全局安装gulp$ npm install --global gulp 
 2.作为项目的开发依赖安装 在对应项目中安装$ npm install --save-dev gulp
@@ -14,14 +60,14 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="gulp">
 <meta property="og:url" content="http://yoursite.com/2015/11/10/gulp/index.html">
-<meta property="og:site_name" content="blog">
+<meta property="og:site_name" content="ninan1028-幻想飞鱼">
 <meta property="og:description" content="gulp知识点什么是gulpGulp是一个构建系统,执行开发中的常见任务.Gulp是基于Node.js来构建的.
 
 1.全局安装gulp$ npm install --global gulp 
 2.作为项目的开发依赖安装 在对应项目中安装$ npm install --save-dev gulp
 3 项目初始化 npm init 来 创建 package.json文件$ npm init 
   通">
-<meta property="og:updated_time" content="2015-11-15T17:39:45.682Z">
+<meta property="og:updated_time" content="2015-11-18T11:13:03.467Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="gulp">
 <meta name="twitter:description" content="gulp知识点什么是gulpGulp是一个构建系统,执行开发中的常见任务.Gulp是基于Node.js来构建的.
@@ -30,74 +76,171 @@
 2.作为项目的开发依赖安装 在对应项目中安装$ npm install --save-dev gulp
 3 项目初始化 npm init 来 创建 package.json文件$ npm init 
   通">
-  
-    <link rel="alternative" href="/atom.xml" title="blog" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="/css/style.css" type="text/css">
-  
 
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: '',
+    sidebar: 'post',
+    motion: true
+  };
+</script>
+
+  <title> gulp | ninan1028-幻想飞鱼 </title>
 </head>
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">blog</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
-      </div>
-    </div>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  <!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
   </div>
-</header>
-      <div class="outer">
-        <section id="main"><article id="post-gulp" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/11/10/gulp/" class="article-date">
-  <time datetime="2015-11-10T07:57:53.000Z" itemprop="datePublished">2015-11-10</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      gulp
-    </h1>
+<![endif]-->
   
 
+
+
+
+
+
+  <div class="container one-column page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">ninan1028-幻想飞鱼</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu ">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content">
+          
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                gulp
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2015-11-10T15:57:53+08:00" content="2015-11-10">
+              2015-11-10
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+        </div>
       </header>
     
-    <div class="article-entry" itemprop="articleBody">
+
+
+    <div class="post-body">
+
       
-        <h3 id="gulp知识点">gulp知识点</h3><h3 id="什么是gulp">什么是gulp</h3><p>Gulp是一个构建系统,执行开发中的常见任务.Gulp是基于Node.js来构建的.</p>
+      
+
+      
+        <span itemprop="articleBody"><h3 id="gulp知识点">gulp知识点</h3><h3 id="什么是gulp">什么是gulp</h3><p>Gulp是一个构建系统,执行开发中的常见任务.Gulp是基于Node.js来构建的.</p>
 <hr>
 <h3 id="1-全局安装gulp">1.全局安装gulp</h3><pre><code>$ <span class="built_in">npm</span> install --<span class="built_in">global</span> gulp 
 </code></pre><h3 id="2-作为项目的开发依赖安装_在对应项目中安装">2.作为项目的开发依赖安装 在对应项目中安装</h3><pre><code>$ npm install --<span class="built_in">save</span>-<span class="built_in">dev</span> gulp
@@ -116,145 +259,460 @@
 <p>gulp.src(glob)返回一个可读的stream</p>
 <p>gulp.dest(glob)返回一个可写的stream</p>
 <h4 id="gulp中的顺序执行方案">gulp中的顺序执行方案</h4><p>在gulp对任务的定义中,可以声明任务之间的依赖. 比如<br>    gulp.task(“sass”,[“clean”],funtion(){<br>    //do something<br>    })<br>    gulp.task(“clean”,function(){<br>         return  gulp.src(‘sample.css’)<br>                  .pipe(clean())<br>    })<br> 在声明依赖后,可以保证任务的顺序执行. 但是要记得 return 返回流</p>
-<h4 id="gulp_plugins">gulp  plugins</h4><p>gulp-autoprefixer<br>根据设置浏览器版本自动处理浏览器前缀.不必考虑各浏览器兼容前缀</p>
+<h4 id="gulp_plugins">gulp  plugins</h4><h5 id="gulp-autoprefixer">gulp-autoprefixer</h5><p>根据设置浏览器版本自动处理浏览器前缀.不必考虑各浏览器兼容前缀<br><a href="https://github.com/sindresorhus/gulp-autoprefixer" target="_blank" rel="external">github地址</a><br><a href="https://www.npmjs.com/package/gulp-autoprefixer/" target="_blank" rel="external">npm地址</a><br>安装</p>
+<pre><code>npm install --<span class="built_in">save</span>-<span class="built_in">dev</span>  gulp-autoprefixer
+</code></pre><p>使用</p>
+<pre><code><span class="keyword">var</span> autoprefixer=<span class="built_in">require</span>(<span class="string">"gulp-autoprefixer"</span>);
+
+gulp.task(<span class="string">"autopre"</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{
+  gulp.src(<span class="string">'app/css/**/*.css'</span>)
+          .pipe(autoprefixer({
+            browsers:[<span class="string">"last 2 versions"</span>,<span class="string">"&gt;5%"</span>],
+            remove:<span class="literal">true</span>, <span class="comment">// 是否去掉不必要的前缀</span>
+            cascade:<span class="literal">true</span><span class="comment">// 是否美化属性值 默认为true</span>
+            }))
+            .pipe(gulp.dest(<span class="string">"dist/css"</span>))
+  })
+</code></pre><p>gulp-autoprefixer的browers参数的属性值 <a href="https://github.com/ai/browserslist#queries" target="_blank" rel="external">详细解释</a></p>
+<ul>
+<li>last 2 versions: 主流浏览器的最新两个版本</li>
+<li>last 1 Chrome versions: 谷歌浏览器的最新版本</li>
+<li>last 2 Explorer versions: IE的最新两个版本</li>
+<li>last 3 Safari versions: 苹果浏览器最新三个版本</li>
+<li>Firefox &gt;= 20: 火狐浏览器的版本大于或等于20</li>
+<li>iOS 7: IOS7版本</li>
+<li>Firefox ESR: 最新ESR版本的火狐</li>
+<li><blockquote>
+<p>5%: 全球统计有超过5%的使用率</p>
+</blockquote>
+</li>
+</ul>
+<h5 id="gulp-changed">gulp-changed</h5><p>来过滤变动的文件</p>
+<pre><code><span class="keyword">var</span> gulp = <span class="built_in">require</span>(<span class="string">'gulp'</span>);
+<span class="keyword">var</span> changed = <span class="built_in">require</span>(<span class="string">'gulp-changed'</span>);
+<span class="keyword">var</span> ngmin = <span class="built_in">require</span>(<span class="string">'gulp-ngmin'</span>); <span class="comment">// just as an example </span>
+
+<span class="keyword">var</span> SRC = <span class="string">'src/*.js'</span>;
+<span class="keyword">var</span> DEST = <span class="string">'dist'</span>;
+
+gulp.task(<span class="string">'default'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>{
+ <span class="keyword">return</span> gulp.src(SRC)
+    .pipe(changed(DEST))
+    <span class="comment">// ngmin will only get the files that </span>
+    <span class="comment">// changed since the last time it was run </span>
+    .pipe(ngmin())
+    .pipe(gulp.dest(DEST));
+  })
+</code></pre><h5 id="gulp-plumber">gulp-plumber</h5><p>此插件用来捕获处理任务中的错误<br>在gulp的挂到流任务处理中,如果摸个环节出了错,会导致整个任务中断,此可以捕获<br>安装</p>
+<pre><code>npm install --<span class="built_in">save</span>-<span class="built_in">dev</span> gulp-plumber
+</code></pre><p>  使用</p>
+<pre><code><span class="keyword">var</span>  plumber=<span class="built_in">require</span>(<span class="string">"gulp-plumber"</span>);
+<span class="keyword">var</span> minifyCss=<span class="built_in">require</span>(<span class="string">"gulp-minify-css"</span>);
+gulp.task(<span class="string">"minifycss"</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{
+  gulp.src(<span class="string">"app/css/**/*.css"</span>)
+         .pipe(plumber())
+         .pipe(minifyCss())
+         .pipe(gulp.dest(<span class="string">"dist/css"</span>));
+  })
+</code></pre><h5 id="gulp-imports">gulp-imports</h5><p>引入文件<br><a href="https://www.npmjs.com/package/gulp-imports/" target="_blank" rel="external">npm地址</a></p>
+<h4 id="gulp-sourcemaps">gulp-sourcemaps</h4><p><a href="https://www.npmjs.com/package/gulp-sourcemaps/" target="_blank" rel="external">npm地址</a></p>
+<h4 id="gulp-sequence">gulp-sequence</h4><p><a href="https://github.com/teambition/gulp-sequence" target="_blank" rel="external">github地址</a><br>任务的依赖执行</p>
+<pre><code><span class="built_in">npm</span> install --save-dev gulp-sequence
+
+<span class="keyword">var</span> sequence=<span class="built_in">require</span>(<span class="string">"gulp-sequence"</span>);
+
+gulp.task(<span class="string">"task"</span>,sequence([<span class="string">"a"</span>,<span class="string">"b"</span>],<span class="string">"c"</span>,<span class="string">"d"</span>));
+</code></pre><p>任务 a,b 可以并行执行  c,d 顺序执行</p>
 <h3 id="使用gulp_来搭建项目_记录">使用gulp 来搭建项目 记录</h3><h4 id="browser-sync">browser-sync</h4><h5 id="安装">安装</h5><pre><code>npm install --<span class="built_in">save</span>-<span class="built_in">dev</span> browser-sync
-</code></pre>
+</code></pre></span>
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/11/10/gulp/" data-id="cih3hbeb90000t8dhc4nu0mfp" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/gulp/">gulp</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/构建工具/">构建工具</a></li></ul>
 
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/gulp/" rel="tag">#gulp</a>
+          
+            <a href="/tags/构建工具/" rel="tag">#构建工具</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/11/04/构建工具简介/" rel="next" title="构建工具简介">
+                <i class="fa fa-chevron-left"></i> 构建工具简介
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2015/11/11/react/" rel="prev" title="react">
+                react <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
     </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
-  
+
+
+        </div>
+
+        
+
+
+        
+  <div class="comments" id="comments">
     
-<nav id="article-nav">
-  
-    <a href="/2015/11/11/react/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          react
-        
+  </div>
+
+
       </div>
-    </a>
-  
-  
-    <a href="/2015/11/04/构建工具简介/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">构建工具简介</div>
-    </a>
-  
-</nav>
 
-  
-</article>
-
-</section>
+      
         
-          <aside id="sidebar">
   
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Categories</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/web学习/">web学习</a><span class="category-list-count">1</span></li></ul>
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
     </div>
   </div>
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/bower/">bower</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/">github</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/grunt/">grunt</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gulp/">gulp</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/markdown/">markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/react/">react</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/yemon/">yemon</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/构建工具/">构建工具</a><span class="tag-list-count">1</span></li></ul>
-    </div>
-  </div>
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/bower/" style="font-size: 20px;">bower</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/grunt/" style="font-size: 10px;">grunt</a> <a href="/tags/gulp/" style="font-size: 20px;">gulp</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/react/" style="font-size: 10px;">react</a> <a href="/tags/yemon/" style="font-size: 10px;">yemon</a> <a href="/tags/构建工具/" style="font-size: 10px;">构建工具</a>
-    </div>
-  </div>
+      
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">7</span></li></ul>
-    </div>
-  </div>
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recents</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2015/11/16/jsh-web/">jsh_web</a>
-          </li>
-        
-          <li>
-            <a href="/2015/11/11/hexo入门/">hexo入门</a>
-          </li>
-        
-          <li>
-            <a href="/2015/11/11/react/">react</a>
-          </li>
-        
-          <li>
-            <a href="/2015/11/10/gulp/">gulp</a>
-          </li>
-        
-          <li>
-            <a href="/2015/11/04/构建工具简介/">构建工具简介</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" src="/images/flower.jpg" alt="wangzhenpeng" itemprop="image"/>
+          <p class="site-author-name" itemprop="name">wangzhenpeng</p>
+        </div>
+        <p class="site-description motion-element" itemprop="description">勤奋的代码搬运工</p>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">10</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
 
-  
-</aside>
+          <div class="site-state-item site-state-categories">
+            
+              <span class="site-state-item-count">1</span>
+              <span class="site-state-item-name">分类</span>
+              
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            <a href="/tags">
+              <span class="site-state-item-count">10</span>
+              <span class="site-state-item-name">标签</span>
+              </a>
+          </div>
+
+        </nav>
+
         
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#gulp知识点"><span class="nav-number">1.</span> <span class="nav-text">gulp知识点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是gulp"><span class="nav-number">2.</span> <span class="nav-text">什么是gulp</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-全局安装gulp"><span class="nav-number">3.</span> <span class="nav-text">1.全局安装gulp</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-作为项目的开发依赖安装_在对应项目中安装"><span class="nav-number">4.</span> <span class="nav-text">2.作为项目的开发依赖安装 在对应项目中安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3_项目初始化_npm_init_来_创建_package-json文件"><span class="nav-number">5.</span> <span class="nav-text">3 项目初始化 npm init 来 创建 package.json文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#gulp_获取文件"><span class="nav-number">6.</span> <span class="nav-text">gulp 获取文件</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#gulp_的API"><span class="nav-number">6.1.</span> <span class="nav-text">gulp 的API</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#gulp-task()_gulp-src()_gulp-dest()_gulp-watch()"><span class="nav-number">6.1.1.</span> <span class="nav-text">gulp.task()  gulp.src()  gulp.dest() gulp.watch()</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#gulp中的顺序执行方案"><span class="nav-number">6.2.</span> <span class="nav-text">gulp中的顺序执行方案</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#gulp_plugins"><span class="nav-number">6.3.</span> <span class="nav-text">gulp  plugins</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#gulp-autoprefixer"><span class="nav-number">6.3.1.</span> <span class="nav-text">gulp-autoprefixer</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#gulp-changed"><span class="nav-number">6.3.2.</span> <span class="nav-text">gulp-changed</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#gulp-plumber"><span class="nav-number">6.3.3.</span> <span class="nav-text">gulp-plumber</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#gulp-imports"><span class="nav-number">6.3.4.</span> <span class="nav-text">gulp-imports</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#gulp-sourcemaps"><span class="nav-number">6.4.</span> <span class="nav-text">gulp-sourcemaps</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#gulp-sequence"><span class="nav-number">6.5.</span> <span class="nav-text">gulp-sequence</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用gulp_来搭建项目_记录"><span class="nav-number">7.</span> <span class="nav-text">使用gulp 来搭建项目 记录</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#browser-sync"><span class="nav-number">7.1.</span> <span class="nav-text">browser-sync</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#安装"><span class="nav-number">7.1.1.</span> <span class="nav-text">安装</span></a></li></ol></li></ol></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+      
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2015</span>
+  <span class="with-love">
+    <i class="icon-next-heart fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">wangzhenpeng</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT
+  </a>
+</div>
+
+
+
       </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2015 wangzhenpeng<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
+    </footer>
+
+    <div class="back-to-top"></div>
   </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
   
-    <a href="/" class="mobile-nav-link">Home</a>
   
-    <a href="/archives" class="mobile-nav-link">Archives</a>
+
   
-</nav>
+    
     
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  
 
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
-  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+  
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.2"></script>
 
 
-<script src="/js/script.js" type="text/javascript"></script>
+  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.2"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+<script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
 
-  </div>
+<script type="text/javascript" src="/js/motion.js?v=0.4.5.2" id="motion.global"></script>
+
+
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.2" id="bootstrap.scrollspy.custom"></script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    motionMiddleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+      if (CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
+
+  <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+  
+  
+
+  
+  
+
 </body>
 </html>
