@@ -177,6 +177,15 @@
 
     
     
+      
+      
+        
+        
+        
+      
+
+      
+    
 
     
       
@@ -238,100 +247,10 @@
         
           <span itemprop="articleBody">
             
-              <h2 id="github使用介绍">github使用介绍</h2><h3 id="github设置ssh">github设置ssh</h3><h3 id="github_clone项目">github clone项目</h3><h3 id="修改_提交">修改 提交</h3><h3 id="更新到主项目最新状态">更新到主项目最新状态</h3><h3 id="合作提交">合作提交</h3>
-            
-          </span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2015/12/15/webpack/" itemprop="url">
-                  webpack
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            发表于
-            <time itemprop="dateCreated" datetime="2015-12-15T11:25:57+08:00" content="2015-12-15">
-              2015-12-15
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
-            
-              <h2 id="webpack学习">webpack学习</h2><h3 id="webpack_介绍">webpack 介绍</h3><p>webpack 是前端一个工具,可以让各个模块进行加载, 预处理,再进行打包,它有grunt和gulp的所有的基本功能.</p>
-<p>.支持CommonJs和AMD模块，意思也就是我们基本可以无痛迁移旧项目。<br>.支持模块加载器和插件机制，可对模块灵活定制。特别是我最爱的babel-loader，有效支持ES6。<br>.可以通过配置，打包成多个文件。有效利用浏览器的缓存功能提升性能。<br>.将样式文件和图片等静态资源也可视为模块进行打包。配合loader加载器，可以支持sass，less等CSS预处理器。<br>.内置有source map，即使打包在一起依旧方便调试。<br>.支持对css 图片等资源进行打包,从而无需借助Grunt或gulp</p>
-<p>webpack的目标就是对项目中的静态资源进行统一整理,为产品的最终发布提供最优的打包部署方案.</p>
-<h3 id="安装webpack">安装webpack</h3><p>两种方式安装webpack 一种单独下载webpack文件 另一种是用npm包的形式来安装(建议)<br>在全局中安装webpack<br>    <code>npm install webpack -g</code><br> 安装完成之后,就有了全局的webpack命令. 直接执行此命令会默认使用当前的目录的webpack.config.js来作为配置文件<br> 如果想指定另外的配置文件 需要执行<br>    <code>webpack -config webpack.custom.config.js</code></p>
-<h3 id="webpack_配置文件">webpack 配置文件</h3><p>webpack要配置文件 webpack.config.js<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">//webpack.config.js&#10;var path=require(&#34;path&#34;);&#10;module.exports=&#123;&#10;       entry:&#39;../src/entry.js&#39;,//&#28436;&#31034;&#21333;&#20837;&#21475;&#25991;&#20214;&#10;       output:&#123;&#10;           path:path.join(__dirname,&#39;app/bulid&#39;),//&#25171;&#21253;&#36755;&#20986;&#30340;&#36335;&#24452;&#10;           filename:&#39;bundle.js&#39;,//&#25171;&#21253;&#21518;&#30340;&#21517;&#23383;&#10;           publicPath:&#39;./app/bulid/&#39; //html&#24341;&#29992;&#36335;&#24452;,&#22312;&#36825;&#37324;&#26159;&#26412;&#22320;&#22320;&#22336;&#10;       &#125;&#10;&#125;</span><br></pre></td></tr></table></figure></p>
-<p>配置文件中的 entry 是设置打包文件. entry的值可以是字符串单个文件 或者是对象 打包为多个文件例如<br>   <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">module.exports=&#123;&#10;entry:&#123;&#10;     main:&#39;./src/js/entry1.js&#39;,&#10;     page1:[&#10;         &#39;./src/js/page1.js&#39;,&#10;         &#39;./src/js/module.js&#39;&#10;     ]&#10;&#125;,&#10;output:&#123;&#10;      path:path.join(__dirname,&#39;app/bulid&#39;),&#10;      filename:&#39;[name].js&#39;,&#10;      publicPath:&#39;./app/bulid/&#39;&#10;&#125;&#10;&#125;</span><br></pre></td></tr></table></figure></p>
-<p> 上述配置文件 entry 中key值为filename中的 [name]值 打包后的文件名 在html中要引入的文件</p>
-<h3 id="安装加载器">安装加载器</h3><p> 任何静态资源都可以视作模块,然后模块之间可以项目依赖,通过webpack对模块进行处理后,可以打包成我们想要的静态资源<br> 不同的文件需要不同的加载器.样式文件 css-loader sass-loader<br> 第一步使用npm安装必须的loader<br> <code>$ npm install style-loader css-loader url-loader babel-loader sass-loader file-loader  jsx-loader --save-dev</code></p>
-<h3 id="配置loader">配置loader</h3><p>安装完成之后,就需要在配置文件中配置在webpack.config.js中载入loader<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">// webpack.config.js&#10;module.exports = &#123;&#10;    entry: path.join(__dirname, &#39;src/entry.js&#39;),&#10;    output: &#123;&#10;        path: path.join(__dirname, &#39;app/bulid&#39;),&#10;        publicPath: &#34;./app/build/&#34;,&#10;        filename: &#39;bundle.js&#39;&#10;    &#125;,&#10;    // &#26032;&#28155;&#21152;&#30340;module&#23646;&#24615;&#10;    module: &#123;&#10;        loaders: [&#10;            &#123;test: /\.jsx?$/, loader: &#34;babel&#34;&#125;, // &#36825;&#20004;&#20010;&#36873;&#25321;&#19968;&#20010; &#10;            &#123;test: /\.jsx?$/, loader: &#34;jsx&#34;&#125;,&#10;            &#123;test: /\.css$/, loader: &#34;style!css&#34;&#125;,&#10;            &#123;test: /\.(jpg|png)$/, loader: &#34;url?limit=8192&#34;&#125;,&#10;            &#123;test: /\.scss$/, loader: &#34;style!css!sass&#34;&#125;&#10;        ]&#10;    &#125;&#10;&#125;;</span><br></pre></td></tr></table></figure></p>
-<pre><code>配置loader中  loaders是一个数组,里面的每一个对象为一个配对 
-<span class="built_in">test</span>为一个正则表达式 后面是加载器,可以省略后面的loader 全写是 style-loader 
-不同的处理器用 !进行相连.输出文件可以为另一个加载器的入口文件
-</code></pre><h3 id="配置resolve">配置resolve</h3><p> 在配置文件中可以将node_modules路径添加到resolve search root列表里面,这样就可以直接load 加载npm模块了</p>
- <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">// webpack.config.js&#10;// you can now require(&#39;file&#39;) instead of require(&#39;file.js&#39;)&#10;resolve: &#123;&#10;    root: [process.cwd() + &#39;/src&#39;, process.cwd() + &#39;/node_modules&#39;],&#10;    alias: &#123;&#125;,&#10;    extensions: [&#39;&#39;, &#39;.js&#39;, &#39;.css&#39;, &#39;.scss&#39;, &#39;.ejs&#39;, &#39;.png&#39;, &#39;.jpg&#39;]&#10;&#125;,</span><br></pre></td></tr></table></figure>
+              <h2 id="github使用介绍">github使用介绍</h2><h3 id="github设置ssh">github设置ssh</h3><p> 检查本机是否有ssh key设置<br> <code>$ cd ~/.ssh或cd .ssh</code><br> 1 如果没有则提示: No such file or directory<br> 2 使用git bash生成新的 ssh key<br>  <code>cd ~</code><br>  保证当前路径在” ~ “下<br>  执行<br>  <code>$　ssh-keygen -t  rsa -C &#39;*****@22.com&#39;</code><br>  即可配置完成 </p>
+<p>  配置账户<br>  <code>$ git config --global user.name “your_username”  #设置用户名
+  $ git config --global user.email “your_registered_github_Email”  #设置邮箱地址(建议用注册giuhub的邮箱)</code></p>
+<h3 id="github_clone项目">github clone项目</h3><h3 id="修改_提交">修改 提交</h3><h3 id="更新到主项目最新状态">更新到主项目最新状态</h3><h3 id="合作提交">合作提交</h3>
             
           </span>
         
